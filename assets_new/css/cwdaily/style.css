@@ -1,0 +1,528 @@
+.index-page .subNav {
+width: 100%;
+background-color: #777;
+text-align: right;
+height: 36px;
+padding: 0 46px;
+position: absolute;
+left: 0;
+right: 0;
+top: 0px;
+margin: auto;
+margin-bottom: -18px;
+z-index: 2;
+}
+.index-page .subNav ul {
+background-color: #777;
+}
+* {
+margin: 0;
+padding: 0;
+transition: all .5s;
+}
+.daily-page{
+overflow-y: scroll;
+overflow-x: hidden;
+}
+/*bg背景 20171123 修改 */
+.daily-page header {
+background: url(../../img/cwdaily/daily_app_kv.jpg);
+background-repeat: no-repeat;
+-moz-background-size: cover;
+-webkit-background-size: cover;
+-o-background-size: cover;
+background-size: cover;
+}
+.daily-page header .section_overlay {
+background-color: rgba(33, 33, 33, .75);
+height: 100vh;
+}
+}
+.daily-page .home_text {
+display: block;
+margin: auto;
+padding-top: 180px;
+text-align: center;
+}
+.daily-page .home_text img {
+display: block;
+margin: auto;
+padding-top: 200px;
+}
+.daily-page .section_overlay ul{
+width: 608px;
+list-style: none;
+margin: 0 auto;
+padding: 0;
+margin-top: 50px;
+text-align: right;
+}
+.daily-page .section_overlay li{
+display: inline-block;
+}
+.daily-page .section_overlay a{
+display: block;
+}
+.daily-page .section_overlay li a img{
+width: 140px;
+height: auto;
+}
+@media (max-width:767px) {
+.daily-page header {
+background-image: url(../../img/cwdaily/daily_app_kv.jpg);
+background-repeat: no-repeat;
+background-position: center;
+background-size: cover;
+}
+.daily-page header .section_overlay {
+background-color: rgba(33, 33, 33, .75);
+height: 100vh;
+}
+.daily-page .home_text {
+display: block;
+margin: auto;
+padding-top: 150px;
+text-align: center;
+}
+.daily-page .home_text img {
+width: 100%;
+padding-top:0;
+}
+.daily-page .section_overlay ul{
+width: 100%;
+text-align: center;
+}
+}
+}
+@media (min-width: 768px) and (max-width:992px) {
+.daily-page .home_text {
+margin: 0 auto;
+padding-top: 180px;
+text-align: center;
+}
+.daily-page .home_text img {
+width: 80%;
+}
+}
+/*訂閱中間的或區塊*/
+.daily-page .separator{
+display: none;
+}
+@media (max-width: 767px) {
+.daily-page .separator {
+display: block;
+position: relative;
+text-align: center;
+margin: 60px 0;
+}
+.daily-page .separator span {
+color: #000;
+position: relative;
+margin: .8em 0 0;
+font-size: 15px;
+font-weight: 300;
+background-color: #FFF;
+padding: 0 1em;
+z-index: 1;
+}
+.daily-page .separator:after {
+content: '';
+width: 85%;
+height: 1px;
+background-color: #000;
+position: absolute;
+top: 50%;
+left: 0;
+right: 0;
+margin: 0 auto;
+}
+.daily-page a .subscribe-btn {
+width: 100%;
+height: 48px;
+margin: 20px 0 10px 0;
+}
+.daily-page a .subscribe-btn p {
+padding: 0 12px;
+line-height: 48px;
+font-size: 18px;
+}
+}
+@media (max-width: 320px) {
+.daily-page .separator:after {
+content: '';
+width: 85%;
+border:.5px solid #000;
+position: absolute;
+top: 5px;
+left: 0;
+right: 0;
+margin: 0 auto;
+margin-top: 0;
+}
+.daily-page .subscribe-btn {
+width: 100%;
+height: 44px;
+margin: 20px 0 10px 0;
+}
+.daily-page .subscribe-btn p {
+padding: 10px;
+font-size: 16px;
+}
+}
+/*--section about 20171123修改 --*/
+.daily-page .about {
+background: #F1F1F1;
+padding-top: 100px;
+}
+.daily-page .about .carousel, .item, .active {
+height: 100%;
+}
+.daily-page .about .carousel-inner {
+height: 100%;
+}
+@media (max-width: 768px) {
+.daily-page .about {
+padding-top: 0;
+}
+}
+@media (min-width: 991px) and (max-width: 1200px) {
+.daily-page .subscription .about_phone img {
+margin-top: 184px;
+/*width: 80%;*/
+margin: 0 auto;
+}
+}
+/*--section testimonal下方輪播 20171123修改 --*/
+.daily-page .testimonial {
+background: url(../../img/cwdaily/shutterstock_229705576_1440bl.jpg);
+background-repeat: no-repeat;
+-moz-background-size: cover;
+-webkit-background-size: cover;
+-o-background-size: cover;
+background-size: cover;
+}
+.daily-page .testimonial .section_overlay {
+background: rgba(0, 0, 0, .5);
+padding-top: 80px;
+padding-bottom: 80px;
+height: 600px;
+}
+.daily-page .carousel-indicators {
+bottom: -8px;
+}
+.daily-page #carousel-example-caption-testimonial .carousel-inner .item img {
+border-radius: 50%;
+width: 12.5em;
+border: 3px solid #d0021b;
+}
+.daily-page .testimonial_caption {
+padding-bottom: 70px;
+}
+.daily-page .testimonial_caption p {
+color: #D8D8D8;
+font-size: 18px;
+line-height: 27px;
+padding-top: 50px;
+}
+.daily-page .testimonial_caption h2 {
+position: relative;
+color: #fff;
+text-transform: uppercase;
+font-size: 30px;
+margin-top: 25px;
+}
+.daily-page .testimonial_caption h2:after {
+content: '';
+position: absolute;
+bottom: -0.5em;
+left: 50%;
+width: 50px;
+height: 5px;
+margin: 0 0 0 -25px;
+background: #d0021b;
+}
+.daily-page .testimonial_caption h4 {
+color: #d0021b
+}
+.daily-page .testimonial_caption h4 span {
+color: #D8D8D8;
+font-style: italic;
+font-weight: 300;
+}
+.daily-page .testimonial ol.carousel-indicators li{
+width: 10px;
+height: 10px;
+border: 1px solid #979797;
+margin: 1PX
+}
+.daily-page .testimonial ol.carousel-indicators li.active {
+border: 0px solid #d0021b;
+background: #d0021b;
+}
+@media (min-width: 768px) {
+.daily-page .testimonial .section_overlay {
+background: rgba(0, 0, 0, .5);
+padding-top: 80px;
+padding-bottom: 80px;
+}
+}
+/*--section subscription 20171123修改 --*/
+.daily-page .subscription {
+background: #FFF;
+padding: 100px 0;
+}
+.daily-page .subscription_title {
+padding:20px 0 50px 0;
+}
+.daily-page .subscription_title h2 {
+text-transform: uppercase;
+text-align: center;
+position: relative;
+color: #333;
+font-size: 36px;
+font-weight: 400;
+}
+.daily-page .subscription_title h2:after {
+content: '';
+position: absolute;
+bottom: -0.5em;
+left: 50%;
+width: 50px;
+height: 5px;
+margin: 0 0 0 -25px;
+background: #d0021b;
+}
+.daily-page .btn-action, .btn-action:active, .btn-action:focus, .btn-action:visited {
+background: #373737;
+border: 1px solid #373737;
+color: #fff;
+line-height: 50px;
+margin: 0 auto;
+margin-bottom: 20px;
+border-bottom:  4px solid #000000;
+box-shadow: 0px 2px 4px rgba(0, 0, 0, .5);
+transition: all .5s;
+-webkit-transition: all .5s;
+-moz-transition:all .5s;
+-o-transition:all .5s;
+}
+.daily-page .btn-action:hover {
+background: #d80c18;
+border-color: #d80c18;
+}
+.daily-page .btn-action p {
+font-size: 18px;
+text-align: center;
+color: #fff;
+}
+.daily-page .sub-btn{
+width: 300px;
+}
+.daily-page .content {
+padding-bottom: 15px;
+text-align: center;
+font-size: 18px;
+line-height: 1.6em;
+}
+.daily-page .content span {
+display: block;
+color: #aaa;
+font-size: 16px;
+text-decoration: line-through;
+}
+.daily-page .content a {
+line-height: 50px;
+text-align: center;
+color: #d80c18;
+}
+.daily-page .content a:hover {
+color: #939EA7;
+}
+.daily-page .contentM {
+padding-top: 1.6em;
+}
+.daily-page .inner_about_area h4 {
+margin: 25px 0;
+color: #252525;
+font-size: 28px;
+text-align: center;
+}
+@media (max-width: 768px) {
+.daily-page .btn-action, .btn-action:active, .btn-action:focus, .btn-action:visited {
+margin-bottom: 0px;
+width: 100%;
+}
+.daily-page .Iphone {
+	margin-bottom: 15px;
+}
+.daily-page .content {
+font-size: 16px;
+padding-top: 0px;
+}
+.daily-page .content br {
+display: none;
+}
+.daily-page .contentM {
+padding-bottom: 0;
+}
+.daily-page .inner_about_area h4 {
+margin: 0 0 25px;
+}
+.daily-page .inner_about_area h4.about_AppPhone {
+margin: 15px 0 25px;
+}
+.daily-page .single_store {
+border-left: 0px;
+}
+.daily-page .last {
+border-right: 0px;
+}
+.daily-page .subscription {
+padding: 50px 0;
+}
+.daily-page .subscription_title h2 {
+font-size: 24px;
+line-height: 1.55;
+}
+.daily-page .subscription_title h2:after {
+content: '';
+position: absolute;
+bottom: -1.5em;
+left: 50%;
+width: 50px;
+height: 5px;
+margin: 0 0 0 -25px;
+background: #d0021b;
+}
+.daily-page .testimonial_caption h2 {
+position: relative;
+color: #fff;
+text-align: center;
+text-transform: uppercase;
+margin-top: 25px;
+}
+.daily-page .about_phone {
+text-align: center;
+}
+}
+/* call_to_action 20171123修改*/
+.daily-page .call_to_action {
+background-color: #FFF;
+padding-top: 100px;
+padding-bottom: 100px;
+}
+.daily-page .call_to_action h3 {
+color: #4a4a4a;
+font-size: 36px;
+font-weight: bolder;
+margin-top: 0px;
+}
+.daily-page .call_to_action p {
+text-align: left;
+color: #4a4a4a;
+font-size: 18px;
+line-height: 1.7;
+font-weight: 300;
+}
+.daily-page .call_to_action a {
+color: #d80c18;
+font-size: 18px;
+line-height: 1.7;
+font-weight: 300;
+padding-top: 30px;
+}
+.daily-page .call_to_action a:hover {
+color: #939EA7;
+}
+.daily-page .more-app{
+margin: 20px 0;
+text-align: right;
+}
+@media (max-width: 768px) {
+.daily-page .call_to_action {
+padding-top: 38px;
+padding-bottom: 38px;
+padding-left: 15px;
+padding-right: 15px;
+}
+.daily-page .call_to_action .col-md-3 {
+text-align: center;
+padding-top: 50px;
+}
+.daily-page .call_to_action h3 {
+text-align: left;
+font-size: 24px;
+padding-bottom: 20px;
+}
+.daily-page .call_to_action p {
+font-size: 16px;
+text-align: justify;
+}
+.daily-page .call_to_action a {
+font-size: 16px;
+}
+.daily-page .more-app {
+text-align: right;
+margin: 20px 0;
+}
+.daily-page .about_phone img {
+width: 80%;
+}
+.daily-page .carousel-inner .item img {
+width: 36%;
+}
+}
+@media (min-width: 767px) {
+.daily-page .about_phone {
+text-align: center;
+}
+.daily-page .call_to_action .col-md-3 {
+padding-top: 50px;
+}
+}
+@media (min-width: 992px) {
+.daily-page .call_to_action .col-md-3 {
+padding-top: 0px;
+}
+}
+@media (min-width: 1200px) {
+.daily-page .call_to_action .col-md-3 {
+padding-top: 0px;
+}
+}
+@media (min-width:768px) {
+.daily-page .Pc-daily #myCarousel .carousel-inner .item .mobileImg {
+display: none;
+}
+}
+@media (max-width:767px) {
+.daily-page .Pc-daily #myCarousel .carousel-inner .item .pcImg{
+display: none;
+}
+.daily-page .Pc-daily #myCarousel .carousel-inner .item img {
+padding-top: 70px;
+padding-left: 30px;
+padding-right: 30px;
+width:100%;
+height:auto;
+display : block;
+margin : 0px auto;
+}
+.daily-page .carousel-control .glyphicon-chevron-left, .carousel-control .glyphicon-chevron-right {
+width: 12px;
+height: 12px;
+}
+.daily-page .carousel-control .icon-prev, .carousel-control .glyphicon-chevron-left {
+margin-top: 30px;
+border-left: 2px solid;
+border-bottom: 2px solid;
+}
+.daily-page .carousel-control .icon-next, .carousel-control .glyphicon-chevron-right {
+margin-top: 30px;
+border-top: 2px solid;
+border-right: 2px solid;
+}
+.daily-page .carousel-control {
+width:10%;
+}
+}
